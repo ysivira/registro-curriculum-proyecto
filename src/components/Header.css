@@ -1,0 +1,54 @@
+/*============================================================================
+  Archivo: Header.css 
+  Descripción: Estilos para el componente Header
+  ==========================================================================*/
+.app-header {
+  width: 100%;
+  background-color: var(--color-fondo-container);
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo {
+  height: 70px;
+  width: auto;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--color-texto-principal);
+}
+
+.header-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--color-primario);
+  color: var(--color-texto-claro);
+}

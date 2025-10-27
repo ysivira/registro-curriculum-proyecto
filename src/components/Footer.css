@@ -1,0 +1,18 @@
+/*============================================================================
+  Archivo: Footer.css 
+  Descripción: Estilos para el componente Footer
+  ==========================================================================*/
+.app-footer {
+  width: 100%;
+  background-color: var(--color-fondo-container);
+  padding: 20px 30px;
+  text-align: center;
+  color: var(--color-texto-secundario);
+  margin-top: auto;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 14px;
+}

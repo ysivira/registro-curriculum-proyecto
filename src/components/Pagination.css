@@ -1,0 +1,35 @@
+/*============================================================================
+  Archivo: Pagination.css  
+  Descripción: Estilos para el componente Pagination
+  ==========================================================================*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item .page-link {
+  color: var(--color-primario);
+  background-color: var(--color-texto-claro);
+  border: 1px solid var(--color-borde);
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.page-item.active .page-link {
+  background-color: var(--color-primario);
+  color: var(--color-texto-claro);
+  border-color: var(--color-primario);
+}
+
+.page-item:not(.active) .page-link:hover {
+  background-color: #e9ecef;
+}

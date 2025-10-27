@@ -1,0 +1,70 @@
+/*============================================================================
+  Estilos para la página de detalle del currículo.
+  ==========================================================================*/
+.detail-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--color-fondo-container);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.detail-header h1 {
+  margin: 0;
+  color: var(--color-texto-principal);
+}
+
+.detail-header-actions {
+  display: flex;
+  gap: 10px; 
+}
+
+.detail-section {
+  margin-bottom: 25px;
+}
+
+.detail-section h3 {
+  color: var(--color-texto-secundario);
+  margin-bottom: 15px;
+}
+
+.detail-block {
+  background-color: var(--color-fondo-item);
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.detail-block p {
+  margin: 5px 0;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-info {
+  flex-grow: 1;
+}
+
+.contact-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid var(--color-fondo-item);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

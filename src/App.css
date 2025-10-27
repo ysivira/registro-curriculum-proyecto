@@ -1,0 +1,115 @@
+/*============================================================================
+    Estilos globales para la aplicación.
+  ==========================================================================*/
+:root {
+  --color-primario: #007bff;
+  --color-primario-hover: #0056b3;
+  --color-exito: #28a745;
+  --color-exito-hover: #218838;
+  --color-peligro: #dc3545;
+  --color-peligro-hover: #c82333;
+  --color-fondo-body: #0f0828;
+  --color-fondo-container: #b7c6eb;
+  --color-fondo-item: #d8e4ff;
+  --color-texto-principal: #171616;
+  --color-texto-secundario: #222222;
+  --color-texto-claro: #ffffff;
+  --color-borde: #e0e0e0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-texto-principal);
+  background-color: var(--color-fondo-body);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 30px;
+  flex-grow: 1;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--color-fondo-container);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--color-texto-principal);
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  color: var(--color-texto-claro);
+}
+
+.btn-primary {
+  background-color: var(--color-primario);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primario-hover);
+}
+
+.btn-success {
+  background-color: var(--color-exito);
+}
+
+.btn-success:hover {
+  background-color: var(--color-exito-hover);
+}
+
+.btn-danger {
+  background-color: var(--color-peligro);
+}
+
+.btn-danger:hover {
+  background-color: var(--color-peligro-hover);
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}

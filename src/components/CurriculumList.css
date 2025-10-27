@@ -1,0 +1,81 @@
+/*============================================================================
+  Estilos para la lista de currículos
+  ==========================================================================*/  
+.curriculum-list-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--color-fondo-container);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.curriculum-list-container h2 { 
+  margin-top: 0; 
+}
+
+.curriculum-list { 
+  list-style: none; 
+  padding: 0; 
+  margin-top: 20px; 
+}
+
+.curriculum-list-item { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px; 
+  border-bottom: 1px solid var(--color-borde); 
+  font-size: 16px; 
+}
+
+.curriculum-list-item:last-child { 
+  border-bottom: none; 
+}
+
+.item-info { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.item-name { 
+  font-weight: bold; 
+  color: var(--color-texto-principal); 
+}
+
+.item-email { 
+  font-size: 14px; 
+  color: var(--color-texto-secundario); 
+}
+
+.item-actions { 
+  display: flex; 
+  gap: 10px; 
+}
+
+.lista-vacia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.lista-vacia-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.lista-vacia-texto {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--color-texto-principal);
+}
+
+.lista-vacia-subtexto {
+  font-size: 20px;
+  color: var(--color-texto-secundario);
+}
